@@ -26,7 +26,6 @@ def copy_from_to(from_dir, to_dir):
 
 
 def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, base_path):
-    print(f"looking at {dir_path_content}")
     if os.path.exists(dir_path_content):
         obj_in_dir = os.listdir(dir_path_content)
         for obj in obj_in_dir:
