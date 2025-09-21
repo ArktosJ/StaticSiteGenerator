@@ -1,1 +1,1 @@
-python3 src/main.py "https://github.com/ArktosJ/StaticSiteGenerator/tree/master/docs"
+python3 src/main.py "/StaticSiteGenerator/tree/master/docs/"
