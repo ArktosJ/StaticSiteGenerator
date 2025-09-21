@@ -1,1 +1,1 @@
-python3 src/main.py /https://github.com/ArktosJ/StaticSiteGenerator
+python3 src/main.py /https://github.com/ArktosJ/StaticSiteGenerator/
