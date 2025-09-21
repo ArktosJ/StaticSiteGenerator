@@ -1,14 +1,13 @@
-from generate import start_copy_from_to, generate_page, generate_pages_recursive
+import sys
+from generate import start_copy_from_to, generate_pages_recursive
 
 def main():
 
-    start_copy_from_to("static", "public")
-    #generate_page("content/index.md", "template.html", "public/index.html")
-    #generate_page("content/blog/glorfindel/index.md", "template.html", "public/blog/glorfindel/index.html")
-    #generate_page("content/blog/tom/index.md", "template.html", "public/blog/tom/index.html")
-    #generate_page("content/blog/majesty/index.md", "template.html", "public/blog/majesty/index.html")
-    #generate_page("content/contact/index.md", "template.html", "public/contact/index.html")
-    generate_pages_recursive("content", "template.html", "public")
+    base_path = sys.argv[1]
+    base = "/home/arktosj/StaticSiteGenerator/StaticSiteGenerator"
+    start_copy_from_to("static", "docs", base_path)
+
+    generate_pages_recursive("content", "template.html", "docs", base_path)
     
 
 if __name__ == "__main__":
